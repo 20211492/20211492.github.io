@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 2-4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 55%;
+}
+
+.right {
+  width: 45%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+            font-family: Arial, sans-serif;
+        }
+        .list-container {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 300px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px;
+            border-bottom: 2px solid #ccc;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+
+</style>
+</head>
+<body>
+
+<h2><p style="font-size:50px;"</p>3D 프린터에 대하여</h2> 
+    <p style="font-size:30px">차세대 유망 기술</p>
+
+
+
+<div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <p><img src="3d print.gif" alt="3d printer" width="350" height="250", align="left">
+        "삼차원프린팅"이란 삼차원형상을 구현하기 위한 전자적 정보(이하 "삼차원 도면"이라 한다)를 자동화된 출력장치를 통하여 입체화하는 활동을 의미한다.
+        - 삼차원프린팅산업 진흥법 제2조 제1호
+        수치제어 프로그램을 바탕으로 3차원 물체를 만들어내는 기계.</p>
+    <p>가공의 용이성 등 여러 문제 덕분에 초창기에는 대부분 재료로 플라스틱을 사용하였지만 점차 종이, 고무, 콘크리트, 식품에 금속까지 재료의 범위가 점점 넓어지고 있어서 단순히 조형물 출력뿐만 아니라 건축[1], 설계 분야에 활용이 가능하며, 세포를 재료로 하여 인조 생체 조직, 장기 등의 프린팅이 가능한 3D 바이오 프린팅 기술도 등장하는 등, 향후가 기대되는 분야다.</P> 
+    <P>자신이 직접 3D로 그림을 그릴 수 있는 3D 펜이라는 아이디어 상품도 나왔다. 산업적으로 가장 널리 이용되는 것은 금속재료이며 그 중에서도 분말소결적층(Powder bed fusion) 방법이 주요한 공정 방법이다.</p>
+  </div>
+  <div class="column right" style="background-color:#ffffff;">
+    <h2>제조사</h2>
+        <ul>
+            <li>모멘트</li>
+            <li>큐비콘</li>
+            <li>캐리마</li>
+            <li>프로토텍</li>
+            <li>얼티메이커</li>
+        </ul>
+  </div>
+</div>
+
+</body>
+</html>

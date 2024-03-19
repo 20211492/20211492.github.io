@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homework 2-3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:#ffffffff;">
+    <h2>플래시 메모리</h2>
+    <p>플래시 메모리는 비휘발성 반도체 저장장치다. 전기적으로 자유롭게 재기록이 가능하다. ROM의 일종인 EEPROM으로부터 발전하여 현재의 모습으로 정착했다. 예전에는 한 번만 기록이 가능했던 PROM(Programmable ROM)과 삭제가 가능했던 EPROM(Erasable PROM) 2가지의 메모리 방식들이 있었다. PROM은 내용을 기록할 때 하드웨어적으로 내부의 배선을 끊기 때문에 재기록이 불가능하다. EPROM은 삭제 방식에 따라 자외선을 쬐어야 하는 UV-EPROM과 전기적으로 가능한 EEPROM 등으로 나뉜다. 후자는 전술했듯 플래시 메모리로 발전했고, 전자는 매우 번거롭기 때문에 현재는 거의 안 쓰인다. 과거에는 PROM과 EPROM이 각종 펌웨어를 저장하고 있었지만, 요즘은 거의 플래시 메모리로 대체되고 있으므로 펌웨어 업데이트가 과거에 비해 매우 자유롭다. 롬에서 나온 것이니 롬의 일종으로 봐야 할 것 같지만, 플래시 메모리는 기록된 내용을 보존한다는 측면에서는 ROM과 유사한 특징이 있으면서도 데이터 접근 방식도 메모리 방식이 아닌 하드 디스크의 섹터와 유사한 페이지 단위로 접근한다는 특성으로 인해 주기억 장치가 아닌 보조 기억 장치로 분류된다.</p>
+
+  </div>
+  <div class="column" style="background-color:#ffffff;">
+    <h2>USB 메모리</h2>
+    <p>USB 인터페이스를 통해 컴퓨터나 다른 디지털 기기에 연결하여 데이터를 전송할 수 있는 기억장치이다. 정식 명칭은 USB 플래시 드라이브(USB flash drive)이지만 대한민국에서는 보통 줄여서 USB라고 부른다. 영어권에서는 Thumb drive라고도 부른다.
+
+        휴대성, 용량, 속도, 가격 등 다양한 면에서 다른 휴대용 저장매체보다 월등하기 때문에 플로피 디스크와 CD를 몰아냈다. 이름 그대로 엄지손가락만한 크기 하나만으로도 ZIP, 슈퍼디스크 같은건 상대도 될 수 없었고(애시당초 이쪽은 플래시 메모리가 대중화 될 즈음에는 이미 사장된 기술이나 마찬가지였고) 시간이 흐를수록 가격은 낮아지고 용량이 커짐으로 인해 소프트웨어 배포용 롬 디스크를 없애버리고 어지간한 휴대용 하드디스크마저 필요없게 만들어버렸다.</p>
+  </div>
+</div>
+
+</body>
+</html>
