@@ -1,0 +1,59 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Cake Form</title>
+    <script type="text/javascript" src="formcalculations.js"></script>
+    <link href="cafemenu.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" id="cafemenu" onsubmit="return false;">
+        <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>주문을 도와드리겠습니다.</legend>
+                <label >음료 단품<br></label>
+                <label class='radiolabel'><input type="radio"  name="selectedmenu" value="아이스 아메리카노" onclick="calculateTotal()" />아이스 아메리카노 - 2,200원</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedmenu" value="바닐라 라떼" onclick="calculateTotal()" />바닐라 라떼 - 4,600원</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedmenu" value="레몬에이드" onclick="calculateTotal()" />레몬에이드 - 5,800원</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedmenu" value="아이스 티" onclick="calculateTotal()" />아이스 티 - 2,500원</label><br/>
+                <br/>
+                <label >조각 케이크</label>
+         
+                <select id="flavor" name='flavor' onchange="calculateTotal()">
+                <option value="None">케이크 종류 선택</option>
+                <option value="cheese">치즈 - 5,600원</option>
+                <option value="Chocolate">초코 - 6,000원</option>
+                <option value="basic">생크림 - 5,600원</option>
+                <option value="Tiramisu">티라미슈 - 6,300원</option>
+               </select>
+                <br/>
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+            
+        	<div class="cont_details">
+            	<fieldset>
+                <legend>주문 정보</legend>
+                <label for='name'>주문자명</label>
+                <input type="text" id="name" name='name' />
+                <br/>
+                <label for='address'>배송지</label>
+                <input type="text" id="address" name='address' />
+                <br/>
+                <label for='phonenumber'>휴대폰 번호</label>
+                <input type="text"  id="phonenumber" name='phonenumber'/>
+                <br/>
+                </fieldset>
+            </div>
+            <input type='submit' id='submit' value='입력' onclick="calculateTotal()" />
+            <div id="orderConfirmation"></div>
+        </div>  
+       </form>
+	</div>
+
+</body>
+</html>
